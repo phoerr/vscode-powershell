@@ -904,24 +904,24 @@
     },
     "Suppress PSScriptAnalyzer Rule": {
         "prefix": "suppress-message-rule",
-        "description": "Suppress a built-in PSScriptAnalyzer rule using the SuppressMessageAttribute",
         "body": [
             "[Diagnostics.CodeAnalysis.SuppressMessageAttribute('${1:PSUseDeclaredVarsMoreThanAssignments}', '')]"
-        ]
+        ],
+        "description": "Suppress a built-in PSScriptAnalyzer rule using the SuppressMessageAttribute"
     },
     "Suppress PSScriptAnalyzer Rule on Parameter": {
         "prefix": "suppress-message-rule-for-parameter",
-        "description": "Suppress a built-in PSScriptAnalyzer rule on a parameter using the SuppressMessageAttribute",
         "body": [
             "[Diagnostics.CodeAnalysis.SuppressMessageAttribute('${1:PSUseDeclaredVarsMoreThanAssignments}', '${2:ParamName}')]"
-        ]
+        ],
+        "description": "Suppress a built-in PSScriptAnalyzer rule on a parameter using the SuppressMessageAttribute"
     },
     "Suppress PSScriptAnalyzer Rule in Scope": {
         "prefix": "suppress-message-rule-for-scope",
-        "description": "Suppress a built-in PSScriptAnalyzer rule for functions or classes in a specific scope using the SuppressMessageAttribute",
         "body": [
             "[Diagnostics.CodeAnalysis.SuppressMessageAttribute('${1:PSProvideDefaultParameterValue}', '', Scope='Function', Target='${2:*}')]"
-        ]
+        ],
+        "description": "Suppress a built-in PSScriptAnalyzer rule for functions or classes in a specific scope using the SuppressMessageAttribute"
     },
     "PSCustomObject": {
         "prefix": "[PSCustomObject]",
